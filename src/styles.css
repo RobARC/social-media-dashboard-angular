@@ -46,10 +46,7 @@ body {
     --lightGray: #8088ad;
     --switchSpinner: #282943;
     --switch: linear-gradient(to right, #4a70e3 0%, #48e7c7 100%);
-    
 }
-
-
 
 @media screen and (min-width: 480px) {
     .grid {
