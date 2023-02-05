@@ -1,0 +1,18 @@
+<header>
+    <div class="wrapper container">
+        <div class="header">
+            <div class="header-title">
+                Social Media Dashboard
+            </div>
+            <div class="header-2">
+                <div class="header-total">
+                    Total Fallowers: 23.004
+                </div>
+                <app-switch class="btn"
+                    (schemeChanged)="darkModeActive($event)"
+                    [darkModeActive] = "darkMode"  
+                ></app-switch>
+            </div>
+        </div>
+    </div>
+</header>

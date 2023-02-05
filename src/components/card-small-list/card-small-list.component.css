@@ -1,0 +1,5 @@
+@supports (percentageIcon: './assets/icon-down.svg') {
+    .percentage{
+        color: var(--bright-red);
+    }
+}

@@ -1,0 +1,17 @@
+<div class="switch-button">
+    <h3>Dark mode</h3>
+    <label for="switch-label" class="switch-button__label">
+        <input
+        #switch
+        id="switch-label"
+        type="checkbox"
+        name="switch-button_checkbox"
+        [checked]="darkModeActive"
+        (change)="changeDarkMode(switch.checked)"
+        class="switch-button-checkbox"
+        />
+        <div class="rail">
+            <span class="circle"></span>
+        </div>
+    </label>
+</div>

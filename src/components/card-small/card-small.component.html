@@ -1,0 +1,21 @@
+<article class="card-small">
+    <div class="card-small-tiltle">
+        {{ cardSmall.title }}
+    </div>
+    <div class="card-small-social">
+        <img src="{{ cardSmall.socialIcon }}" alt="" />
+    </div>
+    <div class="card-small-number">
+        {{ cardSmall.number }}
+    </div>
+    <div class="card-small-percentage">
+        <div class="card-small-percentage-cnt">
+            <img src="{{ cardSmall.percentageIcon }}" alt="" 
+            >
+            <span class="percentage {{ cardSmall.class }}" >
+                {{ cardSmall.percentage }} %
+            </span>
+            
+        </div>
+    </div>
+</article>

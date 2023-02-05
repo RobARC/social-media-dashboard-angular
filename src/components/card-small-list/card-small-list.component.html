@@ -1,0 +1,11 @@
+<section class="card-small-list">
+    <div class="wrapper">
+        <h2>Overview - Today</h2>
+        <div class="grid">
+            <app-card-small 
+                *ngFor="let cardSmall of cardSmallList"
+                [cardSmall]="cardSmall"    
+            ></app-card-small>
+        </div>
+    </div>
+</section>

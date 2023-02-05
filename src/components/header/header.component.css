@@ -1,0 +1,35 @@
+/* header */
+
+.header{
+    border-bottom: 1px solid (var --gray);
+    margin-bottom: 10px;
+    padding-bottom: 16px;
+}
+
+.header-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.header-title{
+    padding-top: 2em;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.header-total{
+    font-size: 1em;
+    color: var(--gray);
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+/* media queries */
+
+@media screen and (min-width: 1024px){
+    .header{
+        border-bottom: 0px solid (var --gray);
+    }
+}
