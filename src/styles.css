@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    color: var(--baseColor);
+    background: var(--baseBackground);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+:root {
+    --lime-green: hsl(163 , 72%, 41%);
+    --bright-red: hsl(356, 69%, 56%);
+    --facebook: #168ef4;
+    --twitter: hsl(203, 89%, 53%);
+    --instagram-1: hsl(37, 97%, 70%);
+    --instagram-2: hsl(329, 70%, 58%);
+    --youtube: hsl(348, 97%,39%);
+}
+
+.grid {
+    display: grid;
+    grid-row-gap: 25px;
+}
+
+.wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.is-light-mode {
+    --gray: #5f616d;
+    --cardGray: #f0f3fa;
+    --baseBackground: #fff;
+    --baseColor: #1d2029;
+    --lightGray: #aeafb7;
+    --switchSpinner: #fff;;
+    --switch: linear-gradient(to right, #8d9197 0%, #cbd2d0 100%);
+}
+
+.is-dark-mode {
+    --gray: #8088ad;
+    --cardGray: #252b43;
+    --baseBackground: #1d2029;
+    --baseColor: #fff;
+    --lightGray: #8088ad;
+    --switchSpinner: #282943;
+    --switch: linear-gradient(to right, #4a70e3 0%, #48e7c7 100%);
+    
+}
+
+
+
+@media screen and (min-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .grid {
+        column-gap: 25px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid {
+        column-gap: 25px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
